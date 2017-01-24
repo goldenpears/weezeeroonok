@@ -17,25 +17,6 @@ a[target="_blank"]:after {
   color: blue;
 }
 
-ul {
-  padding-left: 10px; 
-  list-style-type: none;
-  margin-bottom: 20px; }
-
-.list_title {
-  font-weight: bolder;
-  font-size: 16px;
-  padding-top: 20px;
-}
-
-.list_title:before {
-  font-family: 'FontAwesome';
-  content: " \f105";
-  font-size: 9px;
-  padding-right: 4px;
-  color: #4e4e4e;
-}
-
 .container {
   display: flex;
   justify-content: space-between;
@@ -47,7 +28,8 @@ ul {
 
 .title {
   font-size: 3vw;
-  font-weight: bold; }
+  font-weight: bold; 
+  padding-bottom: 30px; }
 
 input {
   border: none;
@@ -62,8 +44,8 @@ input {
   outline: none; }
 
 iframe {
-  width: 300px; 
-  margin-top: 20px;
+  width: 100%; 
+  margin: 20px;
 }
 
 .box {
@@ -92,19 +74,84 @@ iframe {
 }
 
 .secondary_info {
-    font-style: italic;
-    font-weight: bolder;
-    font-size: smaller;
-    padding-top: 70px;
-    text-align: right;
+  font-style: italic;
+  font-size: smaller;
+  margin-top: 70px;
+  text-align: right;
+  border-top: 1px solid #ececec;
 }
 
-footer {
-    display: flex;
-    justify-content: space-between;
-    margin-left: 250px;
-    width: 200px;
-    font-style: italic;
-    font-weight: bolder;
-    font-size: smaller;
+.keynote {
+  padding-top: 10px;
+  font-style: italic;
+  text-align: center;
+  font-size: .75em;
+}
+
+.fa-heart {
+  color: #FD6C6C;
+}
+
+    /*styles for expanded lists*/
+
+ul {
+  padding-left: 10px; 
+  list-style-type: none;
+  margin-bottom: 5px; }
+
+li {
+  font-size: 12px;
+  padding-top: 20px;
+}
+
+li p {
+  padding-left: 20px;
+  font-size: smaller;
+}
+
+label {
+  padding-left: 20px;
+  font-weight: bolder;
+  color: #4e4e4e;
+}
+
+.expand {
+  margin-left: 40px;
+  overflow: auto;
+}
+
+.expand p {
+  padding: 2px 25px 5px 25px;
+}
+
+.list_title {
+  border-bottom: 1px solid #ececec;
+}
+
+.list_title:before {
+  font-family: 'FontAwesome';
+  content: " \f105";
+  font-size: 9px;
+  padding-right: 4px;
+  color: #4e4e4e;
+}
+
+.list_title p {
+  padding-left: 31px;
+}
+
+input[type=checkbox] { display: none; }
+
+input[type=checkbox] ~ ul { 
+  max-height: 30px;
+  max-width: 0;
+  overflow: hidden;
+  font-size: 16px;
+}
+
+input[type=checkbox]:checked ~ ul { 
+  max-height: 100%;
+  max-width: 400px;
+  opacity: 1;
+  font-size: 14px;
 }
