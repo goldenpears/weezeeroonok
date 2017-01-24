@@ -1,15 +1,21 @@
 body {
   background-color: #ffffff;
   font-family: 'Helvetica', sans-serif;
-  color: #d6d6d6;
+  color: #cacaca;
   margin: 0;
-  padding: 1vh;
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 200; }
 
 a, a:visited {
-  color: #b2b9e2;
+  color: black;
   text-decoration: none; }
+
+a[target="_blank"]:after {
+  font-family: 'FontAwesome';
+  content: " \f08e";
+  font-size: 9px;
+  color: blue;
+}
 
 ul {
   padding-left: 10px; 
@@ -22,25 +28,22 @@ ul {
   padding-top: 20px;
 }
 
+.list_title:before {
+  font-family: 'FontAwesome';
+  content: " \f105";
+  font-size: 9px;
+  padding-right: 4px;
+  color: #4e4e4e;
+}
+
 .container {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   margin: 20px auto;
   margin-top: 90px;
   width: 800px;
   height: 500px;
 }
-
-.container_item {
-  flex: 1;
-  margin-left: 100px;
-  margin-right: 100px;
-}
-
-section {
-  box-sizing: border-box;
-  margin: 10px auto;
-  width: 35vw; }
 
 .title {
   font-size: 3vw;
@@ -48,29 +51,40 @@ section {
 
 input {
   border: none;
-  border-bottom: 1px solid #b2b9e2;
+  border-bottom: 1px solid blue;
   padding: 10px;
+  margin-left: 20px;
   font-size: 1.2em;
-  width: 100%; }
+  width: 95%;
+}
 
 *:focus {
   outline: none; }
 
 iframe {
-  width: 300px; }
+  width: 300px; 
+  margin-top: 20px;
+}
 
 .box {
   height: 100px;
   width: 100%;
   margin: 20px;
-  border-radius: 10px;
+  border-radius: 1px;
   border: 1px solid #ececec;
   overflow: hidden;
 }
 
-.box p {
-  padding-top: 5px;
+.box a {
+  padding-top: 15px;
   padding-left: 15px;
+  color: #4e4e4e;
+  display: inline-block
+}
+
+.box p {
+  padding-top: 2px;
+  padding-left: 25px;
 }
 
 .primary_info {
