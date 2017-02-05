@@ -6,5 +6,5 @@ project is under development😥
 
 [contact me](http://locovna.com) for whatever reason, i already ✨ you
 
-## concept
+## it looks like snow
 ![screen](http://locovna.com/img/weezeeroonok.png)
